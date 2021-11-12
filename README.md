@@ -1,2 +1,2 @@
-# Neural_Network_Charity_Analysis
-Create a deep-learning neural network to analyze and classify the success of charitable donations 
+### Overview 
+Using TensorFlow, design a neural network, or deep learning model, to create a binary classification model that can predict if an Alphabet Soup–funded organization will be successful based on the features in the dataset.  
