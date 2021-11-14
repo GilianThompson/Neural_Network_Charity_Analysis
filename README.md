@@ -12,7 +12,8 @@ For the neural network, there are two hidden layers. The first has eight neurons
 
 ### Optimization
 The model was optimized in the file AlphabetSoupCharity_Optimization.ipynb in order to achieve a target predictive accuracy higher than 75%. 
+
 To start, I removed the STATUS and SPECIAL_CONSIDERATIONS columns in the dataframe along with EIN and NAME that were removed the first time around. For the first adjustment to the model, I tried the adding neurons to each hidden layer. The first layer had 15 neurons and the second layer 8 and ran it for 50 epochs. Both loss and accuracy were not changing so I didnt run the model for longer. The loss was approximately 0.5574 and the accuracy was 0.7308, which is not a much of an improvement from the original model. For the second adjustment to the model, I added a third hidden layer with the activation function relu. This model performed much worse with a loss of 0.6908 and an accuracy score of 0.5355. For the third attempt, the optimizer was changed to adagrad. This model worked better than my previous optimization attempts with a loss of 0.5624 and accuracy of 0.7282, but this isn't any significant improvement from any of the models. 
 
 ## Summary
-
+Overall, none of the models created were able to achieve over 75% accuracy. Instead of using neural networks to tackle this problem, a perhaps a random forest or support vector machine would yield better results.  
